@@ -8,6 +8,7 @@ public class ArrayListGitHub{
 	list2.add(i);
 }
 System.out.println(returnArrayList(list1, list2));
+	printList(list1);
 }
 	public static ArrayList<Integer> returnArrayList(ArrayList<Integer> listone, ArrayList<Integer> listtwo){
 		ArrayList<Integer> listReturn= new ArrayList<>();
@@ -19,4 +20,9 @@ System.out.println(returnArrayList(list1, list2));
 	}
 		return listReturn;
 }
+	public static void printList(ArrayList<Integer> listone){
+		for(int i=0; i<listone.size(); i++){
+			System.out.print(listone.get(i)+",");
+		}
+	}
 }
